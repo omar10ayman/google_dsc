@@ -44,6 +44,7 @@ class _SignState extends State<Sign> {
               defaulttextformfield(
                   controller: TextEditingController(),
                   label: "Enter Phone",
+                  key: TextInputType.number,
                   raduis: 15,
                   suffix:
                       IconButton(onPressed: () {}, icon: Icon(Icons.phone))),
@@ -53,6 +54,7 @@ class _SignState extends State<Sign> {
               defaulttextformfield(
                   controller: TextEditingController(),
                   label: "Enter Birth of Date",
+                  key: TextInputType.datetime,
                   raduis: 15,
                   suffix: IconButton(
                       onPressed: () {}, icon: Icon(Icons.data_array))),

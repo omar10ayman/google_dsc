@@ -7,6 +7,7 @@ Widget defaulttextformfield({
   IconButton? suffix,
   bool ispass = false,
   Function? valide,
+  dynamic key,
 }) =>
     Padding(
       padding: const EdgeInsets.all(8.0),
@@ -15,6 +16,7 @@ Widget defaulttextformfield({
           return valide!(s); // must be put return and put s in ()
         },
         controller: controller,
+        keyboardType: key,
         obscureText: ispass,
         decoration: InputDecoration(
           labelText: label,

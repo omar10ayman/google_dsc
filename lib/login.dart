@@ -44,6 +44,8 @@ class _LoginState extends State<Login> {
                 defaulttextformfield(
                     controller: passcontrol,
                     label: "Enter Password",
+                    ispass: true,
+                    key: TextInputType.visiblePassword,
                     raduis: 15,
                     suffix: IconButton(
                         onPressed: () {}, icon: Icon(Icons.remove_red_eye))),
